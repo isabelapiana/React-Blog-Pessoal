@@ -1,6 +1,7 @@
 import React from "react";
 import {Grid, Box, Typography} from "@material-ui/core";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 function Footer(){
     return(
@@ -14,6 +15,9 @@ function Footer(){
                         <Box display="flex" alignItems="center" justifyContent="center">
                             <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
                                 <LinkedInIcon style={{ fontSize: 60, color: "white" }} />
+                            </a>
+                            <a href="https://github.com/isabelapiana" target="_blank">
+                                <GitHubIcon style={{ fontSize: 50, color: "white "}} />
                             </a>
                         </Box>
                     </Box>
