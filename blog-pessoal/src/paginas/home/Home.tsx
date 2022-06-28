@@ -1,5 +1,6 @@
 import React from "react";
-import { Grid, Box, Button, Typography } from "@material-ui/core";
+import { Grid, Button, Typography } from "@material-ui/core";
+import { Box } from "@mui/material";
 //import {Paper} from "@material-ui/core;"
 import './Home.css';
 
@@ -71,7 +72,7 @@ function Home() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src="https://i.imgur.com/IOlxpLS.png" alt="" width="500px" height="500px" />
+                    <img src="https://i.imgur.com/IOlxpLS.png" alt="" width="500px" height="500px" className="br-50"/>
                 </Grid>
                 <Grid xs={12} style={{ backgroundColor: "white" }}>
                 </Grid>

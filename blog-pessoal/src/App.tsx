@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
+// import { Grid } from '@material-ui/core';
 import './App.css';
 import Home from './paginas/home/Home';
 import Navbar from './components/estaticos/navbar/Navbar';
