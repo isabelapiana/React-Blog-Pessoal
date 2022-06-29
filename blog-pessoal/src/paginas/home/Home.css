@@ -1,4 +1,18 @@
-
 .br-50{
     border-radius: 50%;
+}
+.caixa{
+    background-color: #d3777d;
+}
+.titulo{
+    color: white !important;
+    font-weight: bold !important;
+}
+.botao{
+    border-color: white !important;
+    background-color: #975261 !important;
+    color: white !important;
+}
+.postagens{
+    background-color: white;
 }

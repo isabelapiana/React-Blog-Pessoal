@@ -6,3 +6,10 @@
     display: flex;
     justify-content: space-between;
 }
+.text-decorator-none{
+    text-decoration: none;
+}
+.cursor{
+    cursor: pointer;
+    color: white;
+}
