@@ -14,6 +14,7 @@ function CadastroUsuario() {
         {
             id: 0,
             nome: '',
+            foto: '',
             usuario: '',
             senha: ''
         })
@@ -22,6 +23,7 @@ function CadastroUsuario() {
         {
             id: 0,
             nome: '',
+            foto: '',
             usuario: '',
             senha: ''
         })
