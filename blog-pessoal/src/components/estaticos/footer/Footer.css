@@ -5,11 +5,19 @@
 .redes{
     font-size: 60px !important;
     color: white;
+    transition: transform 0.5s;
+}
+.redes:hover{
+    transform: scale(1.4);
+    color: bisque;
 }
 .box2{
     background-color: #975261;
     height: 60px;
 }
 .textos{
-    color: white;
-}
+    font-family: sans-serif !important;
+    color:bisque !important;
+    font-weight: bold !important;
+ }
+

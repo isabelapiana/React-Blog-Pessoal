@@ -1,3 +1,13 @@
 .text-decorator-none{
     text-decoration: none;
 }
+.botao1{
+    border-color: white !important;
+    background-color: #975261 !important;
+    color: white !important;
+}
+.botao2{
+    border-color: white !important;
+    background-color: #d3777d !important;
+    color: white !important;
+}

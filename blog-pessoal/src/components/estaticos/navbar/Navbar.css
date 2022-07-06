@@ -13,3 +13,8 @@
     cursor: pointer;
     color: white;
 }
+.fonte{
+    font-family: sans-serif !important;
+    color:bisque !important;
+    font-weight: bold !important;
+}

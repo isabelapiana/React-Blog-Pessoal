@@ -1,3 +1,17 @@
 .titulo{
-    font-weight: bold;
+    font-weight: bold !important;
+    color: #975261 !important;
+    font-family: sans-serif !important;
  }
+ .textoSobre{
+    color: #593139 !important;
+    font-family: sans-serif !important;
+ }
+ .back1{
+    background: linear-gradient(36deg, #975261 8%, #d3777d 89%);
+}
+.fonte{
+   font-family: sans-serif !important;
+   color:bisque !important;
+   font-weight: bold !important;
+}
