@@ -5,12 +5,15 @@ import { Card, CardActions, CardContent, Button, Typography } from "@material-ui
 import './ListaTema.css';
 import Tema from '../../../models/Tema'
 import { busca } from "../../../services/Service";
-import useLocalStorage from "react-use-localstorage";
+import { useSelector } from "react-redux";
+import { TokenState } from "../../../store/tokens/tokensReducer";
 
 function ListaTema() {
 
   let navigate = useNavigate()
-  const [token, setToken] = useLocalStorage('token')
+  const token = useSelector<TokenState, TokenState["tokens"]>(
+    (state)=> state.tokens
+  )
   const [temas, setTemas] = useState<Tema[]>([])
 
   useEffect(() => {
