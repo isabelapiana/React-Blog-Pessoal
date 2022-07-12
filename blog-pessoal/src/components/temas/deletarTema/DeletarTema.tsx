@@ -6,6 +6,7 @@ import { buscaId, deleteId } from '../../../services/Service';
 import Tema from '../../../models/Tema';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 
 function DeletarTema() {
@@ -19,7 +20,16 @@ function DeletarTema() {
 
     useEffect(() => {
         if (token == "") {
-            alert('Você precisa estar logado!')
+            toast.error('Você precisa estar logado!', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
             navigate('/login')
         };
     }, [token])
@@ -31,7 +41,7 @@ function DeletarTema() {
     }, [id])
 
     async function findById(id: string) {
-        buscaId(`/tema/${id}`, setTema, {
+        buscaId(`/temas/${id}`, setTema, {
             headers: {
                 'Authorization': token
             }
@@ -39,17 +49,26 @@ function DeletarTema() {
     }
 
     function sim() {
-        navigate('/temas')
-        deleteId(`/tema${id}`, {
+        navigate('/tema')
+        deleteId(`/temas/${id}`, {
             headers: {
                 'Authorization': token
             }
         });
-        alert('Tema deletado com sucesso');
+        toast.success('Tema deletado com sucesso!', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
     }
 
     function nao() {
-        navigate('/temas')
+        navigate('/tema')
     }
 
     return (
