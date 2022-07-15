@@ -19,7 +19,7 @@ function CadastroPost() {
     const [temas, setTemas] = useState<Tema[]>([]) //Armazena todos os temas
 
     useEffect(() => {
-        if (token == "") {
+        if (token === "") {
             toast.error('Você precisa estar logado!', {
                 position: "top-right",
                 autoClose: 2000,

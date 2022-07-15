@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import {Typography, Button, Box, Card, CardActions, CardContent } from "@material-ui/core"
+import {Typography, Button, Card, CardActions, CardContent } from "@material-ui/core"
 import './DeletarPostagem.css';
+import { Box } from "@mui/material"
 import Postagem from '../../../models/Postagem';
 import { buscaId, deleteId } from '../../../services/Service';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -18,7 +19,7 @@ function DeletarPostagem() {
     const [post, setPosts] = useState<Postagem>()
 
     useEffect(() => {
-        if (token == "") {
+        if (token === "") {
           toast.error('Você precisa estar logado!', {
             position: "top-right",
             autoClose: 2000,

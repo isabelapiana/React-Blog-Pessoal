@@ -17,7 +17,7 @@ function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
 
   useEffect(() => {
-    if (token == '') {
+    if (token === '') {
       toast.error('Você precisa estar logado!', {
         position: "top-right",
         autoClose: 2000,
