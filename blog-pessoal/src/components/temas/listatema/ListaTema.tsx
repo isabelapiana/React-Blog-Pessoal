@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { Box } from "@mui/material";
-import { Card, CardActions, CardContent, Button, Typography } from "@material-ui/core";
+import React, { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
+import { Box } from '@mui/material';
 import './ListaTema.css';
-import Tema from '../../../models/Tema'
-import { busca } from "../../../services/Service";
-import { useSelector } from "react-redux";
-import { TokenState } from "../../../store/tokens/tokensReducer";
-import { toast } from "react-toastify";
+import Tema from '../../../models/Tema';
+import { busca } from '../../../services/Service';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 function ListaTema() {
 
@@ -18,17 +18,17 @@ function ListaTema() {
   const [temas, setTemas] = useState<Tema[]>([])
 
   useEffect(() => {
-    if (token == '') {
+    if (token === '') {
       toast.error('Você precisa estar logado!', {
         position: "top-right",
         autoClose: 2000,
-        hideProgressBar: false,
+        hideProgressBar: true,
         closeOnClick: true,
-        pauseOnHover: false,
+        pauseOnHover: true,
         draggable: false,
         theme: "colored",
-        progress: undefined,
-    });
+        progress: undefined
+    })
       navigate('/login')
     }
   }, [token])
